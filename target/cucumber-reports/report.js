@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 6170780600,
+  "duration": 5905661700,
   "status": "passed"
 });
 formatter.background({
@@ -32,7 +32,7 @@ formatter.match({
   "location": "PreencherInformacoesSeguroSteps.que_esteja_na_pagina_de_informacoes()"
 });
 formatter.result({
-  "duration": 3461591400,
+  "duration": 10773569400,
   "status": "passed"
 });
 formatter.scenario({
@@ -103,74 +103,74 @@ formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_veiculo()"
 });
 formatter.result({
-  "duration": 5568601800,
+  "duration": 5536919200,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_seguro()"
 });
 formatter.result({
-  "duration": 72590200,
+  "duration": 68944900,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_de_dados_do_seguro()"
 });
 formatter.result({
-  "duration": 4312193100,
+  "duration": 4175204800,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_produto()"
 });
 formatter.result({
-  "duration": 45606000,
+  "duration": 50085600,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_produto()"
 });
 formatter.result({
-  "duration": 5147924500,
+  "duration": 5002824500,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_preco()"
 });
 formatter.result({
-  "duration": 40929900,
+  "duration": 46446800,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.selecionar_uma_opcao_do_preco()"
 });
 formatter.result({
-  "duration": 2468083200,
+  "duration": 2458167000,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_cotacao()"
 });
 formatter.result({
-  "duration": 55481600,
+  "duration": 47387900,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_para_enviar_cotacao()"
 });
 formatter.result({
-  "duration": 548168900,
+  "duration": 481028500,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.o_sistema_verifica_a_mensagem()"
 });
 formatter.result({
-  "duration": 8609502900,
+  "duration": 8403870800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1029423400,
+  "duration": 810788600,
   "status": "passed"
 });
 });
