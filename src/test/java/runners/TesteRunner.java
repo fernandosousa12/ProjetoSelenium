@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		features = "classpath:Features"
 				,tags = {"@Contratar"}
 				,glue = {"stepdefinitions"}
-				//,plugin = {"pretty", "html:target/cucumber-reports"}
-				//,monochrome = true
+				,plugin = {"pretty", "html:target/cucumber-reports"}
+				,monochrome = true
 		)
 
 public class TesteRunner {

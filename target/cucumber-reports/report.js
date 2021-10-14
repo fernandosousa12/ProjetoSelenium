@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/PreencherInformacoesDadosSeguro.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/EnviarCotacao.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,13 +7,13 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Automovel",
+  "name": "Cotacao",
   "description": "",
-  "id": "automovel",
+  "id": "cotacao",
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 7487513600,
+  "duration": 6095522700,
   "status": "passed"
 });
 formatter.background({
@@ -32,49 +32,145 @@ formatter.match({
   "location": "PreencherInformacoesSeguroSteps.que_esteja_na_pagina_de_informacoes()"
 });
 formatter.result({
-  "duration": 3556316300,
+  "duration": 4703718900,
   "status": "passed"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Preencho a informacoes do seguro",
+  "name": "Preencher informacoes da cotacao",
   "description": "",
-  "id": "automovel;preencho-a-informacoes-do-seguro",
+  "id": "cotacao;preencher-informacoes-da-cotacao",
   "type": "scenario",
   "keyword": "Cenario",
   "tags": [
     {
       "line": 8,
-      "name": "@Seguro"
+      "name": "@Contratar"
     }
   ]
 });
 formatter.step({
   "line": 10,
-  "name": "preencher todos os campos de dados do seguro",
+  "name": "preencher todos os campos do veiculo",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 11,
+  "name": "valido a tela seguro",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 12,
+  "name": "preencher todos os campos de dados do seguro",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 13,
   "name": "valido a tela produto",
   "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "preencher todos os campos do produto",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 15,
+  "name": "valido a tela preco",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 16,
+  "name": "selecionar uma opcao do preco",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 17,
+  "name": "valido a tela cotacao",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 18,
+  "name": "preencher todos os campos para enviar cotacao",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 19,
+  "name": "o sistema verifica a mensagem",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_veiculo()"
+});
+formatter.result({
+  "duration": 7427519800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.valido_a_tela_seguro()"
+});
+formatter.result({
+  "duration": 136573600,
+  "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_de_dados_do_seguro()"
 });
 formatter.result({
-  "duration": 193749500,
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: Element \u003cinput id\u003d\"firstname\" name\u003d\"First Name\" type\u003d\"text\"\u003e is not reachable by keyboard\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:48\u0027\nSystem info: host: \u0027NTB144576\u0027, ip: \u0027192.168.1.37\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_265\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210922161155, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 8800, moz:profile: C:\\Users\\fesousa\\AppData\\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: de04b572-b860-4a84-bcd3-adab32bf4f9b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat pageobjects.PreencherInformacoesDadosSeguro.preencherDadosSeguro(PreencherInformacoesDadosSeguro.java:62)\r\n\tat stepdefinitions.PreencherInformacoesSeguroSteps.preencher_todos_os_campos_de_dados_do_seguro(PreencherInformacoesSeguroSteps.java:42)\r\n\tat ✽.Quando preencher todos os campos de dados do seguro(Features/PreencherInformacoesDadosSeguro.feature:10)\r\n",
-  "status": "failed"
+  "duration": 4672780400,
+  "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_produto()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 64487400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_produto()"
+});
+formatter.result({
+  "duration": 5220399300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.valido_a_tela_preco()"
+});
+formatter.result({
+  "duration": 52115200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.selecionar_uma_opcao_do_preco()"
+});
+formatter.result({
+  "duration": 2508784600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.valido_a_tela_cotacao()"
+});
+formatter.result({
+  "duration": 71507100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_para_enviar_cotacao()"
+});
+formatter.result({
+  "duration": 644225900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PreencherInformacoesSeguroSteps.o_sistema_verifica_a_mensagem()"
+});
+formatter.result({
+  "duration": 8350974700,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 1781448000,
+  "duration": 1059947700,
   "status": "passed"
 });
 });
