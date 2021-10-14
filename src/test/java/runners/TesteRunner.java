@@ -8,10 +8,10 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "classpath:Features"
-		,glue = {"stepdefinitions"}
-		,tags = {"@Automation"}
-		,plugin = {"pretty", "html:target/cucumber-reports"}
-		,monochrome = true
+				,tags = {"@Contratar"}
+				,glue = {"stepdefinitions"}
+				//,plugin = {"pretty", "html:target/cucumber-reports"}
+				//,monochrome = true
 		)
 
 public class TesteRunner {
