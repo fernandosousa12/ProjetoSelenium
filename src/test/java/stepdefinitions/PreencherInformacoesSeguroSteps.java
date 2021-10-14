@@ -6,7 +6,11 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import pageobjects.EnviarCotacao;
+import pageobjects.PreencherInformacoesDadosProduto;
+import pageobjects.PreencherInformacoesDadosSeguro;
 import pageobjects.PreencherInformacoesSeguroPage;
+import pageobjects.SelecioneOpcaoPreco;
 
 public class PreencherInformacoesSeguroSteps {
 	
@@ -34,7 +38,7 @@ public static WebDriver driver;
 
 	@Quando("^preencher todos os campos de dados do seguro$")
 	public void preencher_todos_os_campos_de_dados_do_seguro() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		PreencherInformacoesDadosSeguro Sv = new PreencherInformacoesDadosSeguro(driver);
 		Sv.preencherDadosSeguro();
 		Sv.clicarProximaSeguro();
 	    
@@ -42,46 +46,46 @@ public static WebDriver driver;
 	
 	@Quando("^valido a tela produto$")
 	public void valido_a_tela_produto() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		PreencherInformacoesDadosSeguro Sv = new PreencherInformacoesDadosSeguro(driver);
 		Sv.validarTelaProduto();
 	}
 
 	@Quando("^preencher todos os campos do produto$")
 	public void preencher_todos_os_campos_do_produto() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		PreencherInformacoesDadosProduto Sv = new PreencherInformacoesDadosProduto(driver);
 		Sv.preencherDadosProduto();
 		Sv.ClicarProximaProduto();
 	}
 	
 	@Quando("^valido a tela preco$")
 	public void valido_a_tela_preco() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		PreencherInformacoesDadosProduto Sv = new PreencherInformacoesDadosProduto(driver);
 		Sv.validarTelaPreco();
 	}
 
 	@Quando("^selecionar uma opcao do preco$")
 	public void selecionar_uma_opcao_do_preco() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		SelecioneOpcaoPreco Sv = new SelecioneOpcaoPreco(driver);
 		Sv.selecionarPreco();
 	    Sv.clicarProximaPreco();
 	}
 
 	@Quando("^valido a tela cotacao$")
 	public void valido_a_tela_cotacao() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		SelecioneOpcaoPreco Sv = new SelecioneOpcaoPreco(driver);
 		Sv.validarTelaCotacao();
 	}
 
 	@Quando("^preencher todos os campos para enviar cotacao$")
 	public void preencher_todos_os_campos_para_enviar_cotacao() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		EnviarCotacao Sv = new EnviarCotacao(driver);
 		Sv.PreencherEnviar();
 		Sv.clicarEnviar();
 	}
 	
 	@Entao("^o sistema verifica a mensagem$")
 	public void o_sistema_verifica_a_mensagem() throws Throwable {
-		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
+		EnviarCotacao Sv = new EnviarCotacao(driver);
 		Sv.validarMensagem();
 	}
 }
