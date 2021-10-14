@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/EnviarCotacao.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/PreencherInformacoesSeguro.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,13 +7,13 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Cotacao",
+  "name": "Seguro",
   "description": "",
-  "id": "cotacao",
+  "id": "seguro",
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 6095522700,
+  "duration": 6396706500,
   "status": "passed"
 });
 formatter.background({
@@ -32,14 +32,14 @@ formatter.match({
   "location": "PreencherInformacoesSeguroSteps.que_esteja_na_pagina_de_informacoes()"
 });
 formatter.result({
-  "duration": 4703718900,
+  "duration": 5471107800,
   "status": "passed"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Preencher informacoes da cotacao",
+  "name": "Preencher informacoes do veiculo",
   "description": "",
-  "id": "cotacao;preencher-informacoes-da-cotacao",
+  "id": "seguro;preencher-informacoes-do-veiculo",
   "type": "scenario",
   "keyword": "Cenario",
   "tags": [
@@ -103,74 +103,74 @@ formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_veiculo()"
 });
 formatter.result({
-  "duration": 7427519800,
+  "duration": 5895707100,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_seguro()"
 });
 formatter.result({
-  "duration": 136573600,
+  "duration": 191912300,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_de_dados_do_seguro()"
 });
 formatter.result({
-  "duration": 4672780400,
+  "duration": 5131217300,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_produto()"
 });
 formatter.result({
-  "duration": 64487400,
+  "duration": 71293000,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_do_produto()"
 });
 formatter.result({
-  "duration": 5220399300,
+  "duration": 5116791000,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_preco()"
 });
 formatter.result({
-  "duration": 52115200,
+  "duration": 45095000,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.selecionar_uma_opcao_do_preco()"
 });
 formatter.result({
-  "duration": 2508784600,
+  "duration": 2498585700,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.valido_a_tela_cotacao()"
 });
 formatter.result({
-  "duration": 71507100,
+  "duration": 58809100,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.preencher_todos_os_campos_para_enviar_cotacao()"
 });
 formatter.result({
-  "duration": 644225900,
+  "duration": 592089800,
   "status": "passed"
 });
 formatter.match({
   "location": "PreencherInformacoesSeguroSteps.o_sistema_verifica_a_mensagem()"
 });
 formatter.result({
-  "duration": 8350974700,
+  "duration": 8526678000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1059947700,
+  "duration": 1275752900,
   "status": "passed"
 });
 });

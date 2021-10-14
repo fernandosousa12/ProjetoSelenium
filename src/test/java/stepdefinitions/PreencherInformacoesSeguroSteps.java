@@ -30,7 +30,7 @@ public static WebDriver driver;
 	    Sv.clicarproxima();
 	}
 	
-	@Entao("^valido a tela seguro$")
+	@Quando("^valido a tela seguro$")
 	public void valido_a_tela_seguro() throws Throwable {
 		PreencherInformacoesSeguroPage Sv = new PreencherInformacoesSeguroPage(driver);
 		Sv.validarTelaSeguro();
@@ -46,7 +46,7 @@ public static WebDriver driver;
 		Ss.clicarProximaSeguro();
 	}
 
-	@Entao("^valido a tela produto$")
+	@Quando("^valido a tela produto$")
 	public void valido_a_tela_produto() throws Throwable {
 		PreencherInformacoesDadosSeguro Ss = new PreencherInformacoesDadosSeguro(driver);
 		Ss.validarTelaProduto();
@@ -61,7 +61,7 @@ public static WebDriver driver;
 		Sv.ClicarProximaProduto();
 	}
 	
-	@Entao("^valido a tela preco$")
+	@Quando("^valido a tela preco$")
 	public void valido_a_tela_preco() throws Throwable {
 		PreencherInformacoesDadosProduto Sv = new PreencherInformacoesDadosProduto(driver);
 		Sv.validarTelaPreco();
@@ -75,7 +75,7 @@ public static WebDriver driver;
 	    Sv.clicarProximaPreco();
 	}
 
-	@Entao("^valido a tela cotacao$")
+	@Quando("^valido a tela cotacao$")
 	public void valido_a_tela_cotacao() throws Throwable {
 		SelecioneOpcaoPreco Sv = new SelecioneOpcaoPreco(driver);
 		Sv.validarTelaCotacao();
